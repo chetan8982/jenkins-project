@@ -4,4 +4,7 @@ echo "Hostname : $(hostname)"
 echo "Current Directory : $(pwd)"
 echo "Date : $(date)"
 
-echo "Update : $(sudo apt get update)"
+echo "Installing Update"
+sudo apt update
+sudo apt install -y nginx
+nginx --version
